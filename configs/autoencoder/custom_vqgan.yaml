@@ -42,13 +42,13 @@ data:
     train:
       target: taming-transformers-master.taming.data.custom.CustomTrain
       params:
-        training_images_list_file: /home/zwb/zwb/code/0531/test_kaggle/ldm_thin_kaggle/datasets/celeba-hq-dataset/train_shuffled_local.flist
+        training_images_list_file: /kaggle/working/ldm_thin_kaggle/datasets/celeba-hq-dataset/train_shuffled_Kaggle.flist
         size: 256
         mask_mode: ThinStrokes   # 'hybrid' 'center' 'ThinStrokes',  'MediumStrokes', 'ThickStrokes', 'Every_N_Lines', 'Completion', 'Expand', 'Nearest_Neighbor', m3, m5, m7
     validation:
       target: taming-transformers-master.taming.data.custom.CustomTest
       params:
-        test_images_list_file: /home/zwb/zwb/code/0531/test_kaggle/ldm_thin_kaggle/datasets/celeba-hq-dataset/val_shuffled_local.flist
+        test_images_list_file: /kaggle/working/ldm_thin_kaggle/datasets/celeba-hq-dataset/val_shuffled_Kaggle.flist
         size: 256
         mask_mode: center   # 'hybrid' 'center' 'ThinStrokes',  'MediumStrokes', 'ThickStrokes', 'Every_N_Lines', 'Completion', 'Expand', 'Nearest_Neighbor', m3, m5, m7
 
